@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+.todo-container {
+    width: 400px;
+    margin: 80px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-box {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.count {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+    margin: 8px 0;
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.delete {
+    background: red;
+    color: white;
+    border: none;
+}
+
+/* Dark Theme */
+body.dark {
+    background: #222;
+    color: white;
+}
+
+body.dark .todo-container {
+    background: #333;
+}
+
+body.dark input {
+    background: #444;
+    color: white;
+    border: 1px solid #666;
+}
+
+body.dark li {
+    background: #555;
+}
+
+.theme-btn {
+    display: block;
+    margin: 10px auto 20px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+body.dark .theme-btn {
+    background: white;
+    color: #222;
+}
